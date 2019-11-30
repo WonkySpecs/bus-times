@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset="utf-8">
+<html lang="en">
+	<head>
+        <title>Buses</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main>
+            <p id="intro">An intro</p>
+            <div id="dataInfo">
+                <div>Times have been recorded for <span id="numBuses"></span> buses over <span id="numDays"></span> days.</div>
+            </div>
+            <div id="averages">
+                <div>The mean bus is <span id="meanVal"></span></div>
+                <div>The median bus is <span id="medianVal"></span></div>
+            </div>
+            <div id="boxplot"></div>
+            <div id="boxplotGroupings">
+                <input type="radio" name="boxGrouping" id="all" value="all">All</input>
+                <input type="radio" name="boxGrouping" id="busNum" value="busNum">By bus number</input>
+                <input type="radio" name="boxGrouping" id="bus" value="bus">By Bus</input>
+            </div>
+            <div id="linechart"></div>
+            <div id = timeWasted">
+                <div>Thames Travel have wasted <span id="totalTime"></span> of my time</div>
+            </div>
+            <p id="outro">Outro</p>
+        </main>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
